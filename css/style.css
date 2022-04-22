@@ -1,0 +1,212 @@
+/*Переменные для цветовой палитры*/
+:root {
+  --hover-color: #2196f3;
+  --white-color: #fff;
+  --black-color: #000;
+  --title-color: #757575;
+  --back-color-ef: #2f303a;
+  --box-shadow: rgba(0, 0, 0, 0.15);
+  --back-company: #f5f4fa;
+  --telmail: rgba(255, 255, 255, 0.6);
+  --button-back: #f5f4fa;
+  --back-portfolio: #e5e5e5;
+  --shadow-filt01: rgba(0, 0, 0, 0.1);
+  --shadow-filt08: rgba(0, 0, 0, 0.08);
+  --shadow-filt012: rgba(0, 0, 0, 0.12);
+}
+/*Основное для страницы*/
+.body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--title-color);
+}
+.body .header{
+    background-color: var(--white-color);
+}
+.body .button {
+  cursor: pointer;
+}
+/*Шапка страницы*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.logo-web {
+  color: var(--hover-color);
+}
+.nav-page,
+.nav-contact {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-page .link,
+.nav-contact .link {
+  text-decoration: none;
+  color: var(--black-color);
+}
+.nav-page .link.current {
+  color: var(--hover-color);
+}
+
+.nav-page .link:hover,
+.nav-page .link:focus,
+.nav-contact .link:hover,
+.nav-contact .link:focus,
+.footer .link:hover {
+  color: var(--hover-color);
+}
+
+/*Эффективные решения*/
+.main .effect {
+  background-color: var(--back-color-ef);
+}
+.effect .effect-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.effect .button-ef {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+/*Особенности и команда*/
+.main .feature {
+  list-style-type: none;
+}
+.feature .feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+.feature .feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.main .task-list,
+.main .company-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.main .list,
+.main .company-list {
+  list-style-type: none;
+}
+.main .company {
+  background-color: var(--back-company);
+}
+.company .company-party {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.company .company-post {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*Нижний колонтитул*/
+.footer {
+  background-color: var(--back-color-ef);
+}
+.footer .footer-logo {
+  color: var(--white-color);
+}
+.footer .footer-adress {
+  list-style-type: none;
+}
+.footer .link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer .telmail {
+  color: var(--telmail);
+}
+/*Портфолио*/
+
+/*Фильтр*/
+.filter,
+.gallery {
+  list-style-type: none;
+  font-size: 14px;
+}
+.filter .button-filt {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: var(--black-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--button-back);
+  border-radius: 4px;
+}
+.filter .button-filt:hover,
+.filter .button-filt:focus {
+  background-color: var(--hover-color);
+  box-shadow: 0px 3px 1px var(--shadow-filt01), 
+              0px 1px 2px var(--shadow-filt08),
+              0px 2px 2px var(--shadow-filt012);
+  color: var(--white-color);
+}
+/*Работы*/
+.gallery .gallery-link {
+    text-decoration: none;
+    scroll-snap-type: none;
+}
+.gallery .gallery-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--black-color);
+}
+.gallery .gallery-comment {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
