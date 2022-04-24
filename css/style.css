@@ -87,6 +87,7 @@
 .effect .button-ef {
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -177,6 +178,7 @@
 .filter .button-filt {
   letter-spacing: 0.06em;
   color: var(--head-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
